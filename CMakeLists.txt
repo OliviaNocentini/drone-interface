@@ -127,7 +127,7 @@ include_directories(
 
 ## Declare a C++ library
 add_library(${PROJECT_NAME}
- src/interface_drone.cpp
+ src/offboard.cpp
 )
 
 ## Add cmake target dependencies of the library
@@ -139,7 +139,7 @@ add_library(${PROJECT_NAME}
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_node
- src/interface_drone.cpp
+ src/offboard.cpp
 )
 
 ## Rename C++ executable without prefix
